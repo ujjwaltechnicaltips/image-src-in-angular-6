@@ -1,0 +1,21 @@
+app.component.html
+
+<img [src]=myimage>
+<img src="{{myimage}}">
+<img [src]= myimage1>
+<img src="{{myimg2}}">
+<img bind-src="myimg2"> 
+
+
+<div [ngClass]="['item']" style="background-image: url('../assets/images/img-1.jpg');">Hello Pushpendra</div>
+-------------------------------------------------------------
+
+app.component.ts
+
+export class AppComponent {
+  title = 'app';
+  myimage:string="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260";
+  myimage1:string="../assets/images/sun.jpg";
+  myimg2:string="../assets/images/child.jpg";
+
+}
